@@ -11,8 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8c1fa4d9-dcb9-4209-9b3f-b53925925406" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/luiguelmantilla/dev/aboutme/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/luiguelmantilla/dev/aboutme/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +57,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/luiguelmantilla/dev/aboutme/MainActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="465">
-              <caret line="31" column="27" lean-forward="true" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
+              <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
               <folding>
                 <element signature="e#37#374#0" expanded="true" />
               </folding>
@@ -325,11 +323,11 @@
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.3298122" />
       <window_info anchor="bottom" id="Debug" order="3" />
-      <window_info anchor="bottom" id="Terminal" order="4" weight="0.3298122" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="4" visible="true" weight="0.3298122" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.3298122" />
       <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Flutter Performance" order="7" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Build" order="8" visible="true" weight="0.32629108" />
+      <window_info anchor="bottom" id="Build" order="8" weight="0.32629108" />
       <window_info anchor="bottom" id="Android Profiler" order="9" weight="0.3298122" />
       <window_info anchor="bottom" id="Run" order="10" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
@@ -389,7 +387,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/luiguelmantilla/dev/aboutme/MainActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
-          <caret line="31" column="27" lean-forward="true" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
+          <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
           <folding>
             <element signature="e#37#374#0" expanded="true" />
           </folding>
