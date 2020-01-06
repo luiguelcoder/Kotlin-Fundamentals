@@ -152,7 +152,7 @@ class MainActivity : AppCompatActivity(), LifecycleObserver {
 
     override fun onStart() {
         super.onStart()
-        Timber.i("onStart called")
+        Timber.i("Timber: onStart called")
 
         Log.v("MainActivity", "onStart called")
         Log.d("MainActivity", "onStart called")
