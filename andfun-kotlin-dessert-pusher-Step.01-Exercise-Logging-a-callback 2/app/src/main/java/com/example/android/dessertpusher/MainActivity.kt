@@ -75,7 +75,7 @@ class MainActivity : AppCompatActivity(), LifecycleObserver {
         binding.dessertButton.setOnClickListener {
             onDessertClicked()
         }
-        dessertTimer = DessertTimer()
+        dessertTimer = DessertTimer(this.lifecycle)
 
         // Set the TextViews to the right values
         binding.revenue = revenue
@@ -155,11 +155,13 @@ class MainActivity : AppCompatActivity(), LifecycleObserver {
     override fun onStart() {
         super.onStart()
         Timber.i("Timber: onStart called")
-        dessertTimer.startTimer()
+        //We remove this logic because we implemented the observer
+        //dessertTimer.startTimer()
         Log.v("MainActivity", "onStart called")
         Log.d("MainActivity", "onStart called")
         Log.w("MainActivity", "onStart called")
         Log.e("MainActivity", "onStart called")
+
     }
 
     override fun onRestart() {
@@ -179,7 +181,8 @@ class MainActivity : AppCompatActivity(), LifecycleObserver {
 
     override fun onStop() {
         super.onStop()
-        dessertTimer.stopTimer()
+        // Already implemented
+        //dessertTimer.stopTimer()
         Timber.i("onStop called")
 
     }
