@@ -60,11 +60,6 @@ class GameFragment : Fragment() {
             newScore -> updateScoreText(newScore.toString())
         })
 
-        viewModel.currentTime.observe(this, Observer { newTime ->
-            binding.timerText.text = DateUtils.formatElapsedTime(newTime)
-
-        })
-
         viewModel.eventGameFinish.observe(this, Observer { hasFinished ->
             if(hasFinished){
                 val currentScore = viewModel.score.value ?: 0
