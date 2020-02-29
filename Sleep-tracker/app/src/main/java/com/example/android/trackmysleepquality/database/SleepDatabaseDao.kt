@@ -43,4 +43,7 @@ interface SleepDatabaseDao {
 
     @Query("SELECT * FROM daily_sleep_quality_table ORDER BY nightId DESC LIMIT 1")
     fun getTonight(): SleepNight?
+
+    /// DAO -> https://developer.android.com/reference/android/arch/persistence/room/Dao.html
+    /// Room -> https://developer.android.com/training/data-storage/room/index.html
 }
