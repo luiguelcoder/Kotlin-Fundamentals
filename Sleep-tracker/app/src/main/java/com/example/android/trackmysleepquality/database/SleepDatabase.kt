@@ -15,3 +15,43 @@
  */
 
 package com.example.android.trackmysleepquality.database
+
+import android.content.Context
+import androidx.room.Database
+import androidx.room.Room
+import androidx.room.RoomDatabase
+
+@Database(entities = [SleepNight::class], version = 1, exportSchema = false)
+abstract class SleepDatabase : RoomDatabase() {
+
+    abstract val sleepDatabaseDao: SleepDatabaseDao
+
+    /// Allows clients to access the methods without declaring the class
+    companion object {
+        /// This will help us to avoid open different connections to the DB
+        @Volatile
+        private var INSTANCE: SleepDatabase? = null
+    }
+
+    /// This will return the reference for the DB
+    fun getInstance(context: Context): SleepDatabase {
+        /// Only can support one connection, so we have only one instantiation
+        synchronized(this) {
+            var instance = INSTANCE
+            if (instance == null) {
+                instance = Room.databaseBuilder(
+                        context.applicationContext,
+                        SleepDatabase::class.java,
+                        "sleep_history_database"
+                )
+                        .fallbackToDestructiveMigration()
+                        .build()
+
+                INSTANCE = instance
+            }
+            return instance;
+        }
+    }
+
+
+}
