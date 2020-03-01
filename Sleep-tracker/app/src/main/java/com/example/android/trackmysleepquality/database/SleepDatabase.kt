@@ -53,5 +53,6 @@ abstract class SleepDatabase : RoomDatabase() {
         }
     }
 
-
+    /// [Volatile and Synchronized] -> https://developer.android.com/jetpack/docs/guide#separation-of-concerns
+    /// [Migration DB] -> https://medium.com/androiddevelopers/understanding-migrations-with-room-f01e04b07929
 }
