@@ -31,28 +31,27 @@ abstract class SleepDatabase : RoomDatabase() {
         /// This will help us to avoid open different connections to the DB
         @Volatile
         private var INSTANCE: SleepDatabase? = null
-    }
 
-    /// This will return the reference for the DB
-    fun getInstance(context: Context): SleepDatabase {
-        /// Only can support one connection, so we have only one instantiation
-        synchronized(this) {
-            var instance = INSTANCE
-            if (instance == null) {
-                instance = Room.databaseBuilder(
-                        context.applicationContext,
-                        SleepDatabase::class.java,
-                        "sleep_history_database"
-                )
-                        .fallbackToDestructiveMigration()
-                        .build()
+        /// This will return the reference for the DB
+        fun getInstance(context: Context): SleepDatabase {
+            /// Only can support one connection, so we have only one instantiation
+            synchronized(this) {
+                var instance = INSTANCE
+                if (instance == null) {
+                    instance = Room.databaseBuilder(
+                            context.applicationContext,
+                            SleepDatabase::class.java,
+                            "sleep_history_database"
+                    )
+                            .fallbackToDestructiveMigration()
+                            .build()
 
-                INSTANCE = instance
+                    INSTANCE = instance
+                }
+                return instance;
             }
-            return instance;
         }
     }
-
     /// [Volatile and Synchronized] -> https://developer.android.com/jetpack/docs/guide#separation-of-concerns
     /// [Migration DB] -> https://medium.com/androiddevelopers/understanding-migrations-with-room-f01e04b07929
 }
