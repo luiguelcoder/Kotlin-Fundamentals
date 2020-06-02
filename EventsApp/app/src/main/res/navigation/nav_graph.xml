@@ -52,17 +52,17 @@
         android:id="@+id/scheduleDetailFragmentDialog"
         android:name="nearshorecode.com.eventsapp.ui.fragments.ScheduleDetailFragment"
         android:label="ScheduleDetailFragmentDialog"
-        tools:layout="@layout/fragment_schedule"/>
+        tools:layout="@layout/fragment_schedule_detail"/>
 
     <dialog
         android:id="@+id/speakerDetailFragmentDialog"
         android:name="nearshorecode.com.eventsapp.ui.fragments.SpeakersDetailDialogFragment"
         android:label="SpeakerDetailFragmentDialog"
-        tools:layout="@layout/fragment_speakers"/>
+        tools:layout="@layout/fragment_speakers_detail_dialog"/>
 
     <dialog
         android:id="@+id/locationDetailFragmentDialog"
         android:name="nearshorecode.com.eventsapp.ui.fragments.LocationDetailDialogFragment"
         android:label="LocationDetailFragmentDialog"
-        tools:layout="@layout/fragment_location"/>
+        tools:layout="@layout/fragment_location_detail_dialog"/>
 </navigation>

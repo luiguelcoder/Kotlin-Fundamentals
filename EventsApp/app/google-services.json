@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "654867889260",
+    "firebase_url": "https://note-app-3c23a.firebaseio.com",
+    "project_id": "note-app-3c23a",
+    "storage_bucket": "note-app-3c23a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:654867889260:android:b6af089b0e59a82fa66c49",
+        "android_client_info": {
+          "package_name": "com.luiguelcoder.todo_ddd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "654867889260-o42npskesipt8cbll7la9qnvs8do8ll8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.luiguelcoder.todo_ddd",
+            "certificate_hash": "64e3aeb86b8dd4d52b7b8b291ee92de89ecbc63e"
+          }
+        },
+        {
+          "client_id": "654867889260-vb2qf76oko3f24mqkmcancc53m2hf3og.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.luiguelcoder.todo_ddd",
+            "certificate_hash": "1692f967c1824cc85a7516850ae4da1d76ccba77"
+          }
+        },
+        {
+          "client_id": "654867889260-ofn3o2qqnak0hdlsgssmmc68lnfjkjch.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEy2aSjY7kZ_vg9LwFdMg-48RvBzJbDZg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "654867889260-ofn3o2qqnak0hdlsgssmmc68lnfjkjch.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:654867889260:android:2e57b12d210a17bda66c49",
+        "android_client_info": {
+          "package_name": "nearshorecode.com.eventsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "654867889260-kfnvgesm7slse0ua0jp0tkh12qleuf3r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "nearshorecode.com.eventsapp",
+            "certificate_hash": "1692f967c1824cc85a7516850ae4da1d76ccba77"
+          }
+        },
+        {
+          "client_id": "654867889260-ofn3o2qqnak0hdlsgssmmc68lnfjkjch.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEy2aSjY7kZ_vg9LwFdMg-48RvBzJbDZg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "654867889260-ofn3o2qqnak0hdlsgssmmc68lnfjkjch.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
