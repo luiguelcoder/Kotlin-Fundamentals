@@ -1,4 +1,4 @@
-package nearshorecode.com.eventsapp.ui.activities
+package nearshorecode.com.eventsapp.view.ui.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
