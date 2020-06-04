@@ -1,8 +1,9 @@
 package nearshorecode.com.eventsapp.model
 
+import java.io.Serializable
 import java.util.*
 
-class Conference{
+class Conference: Serializable{
     // Inicialización tardia utlizando lateinit
     lateinit var title: String
     lateinit var description: String

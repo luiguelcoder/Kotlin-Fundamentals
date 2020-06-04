@@ -1,6 +1,8 @@
 package nearshorecode.com.eventsapp.model
 
-class Speaker {
+import java.io.Serializable
+
+class Speaker : Serializable {
     // Var permite crear variables mutables
     var name = ""
     var jobTitle = ""
