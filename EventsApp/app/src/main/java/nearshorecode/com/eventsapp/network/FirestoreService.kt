@@ -30,13 +30,13 @@ class FirestoreService {
             }
     }
 
-    fun getSchedule(callback: Callback<List<android.telecom.Conference>>) {
+    fun getSchedule(callback: Callback<List<Conference>>) {
         firebaseFirestore.collection(CONFERENCES_COLLECTION_NAME)
             .get()
             .addOnSuccessListener { result ->
                 for (doc in result) {
-                    val list = result.toObjects(Conference::class.java)
-                    callback.onSuccess(list)
+                    val list2 = result.toObjects(Conference::class.java)
+                    callback.onSuccess(list2)
                     break
                 }
             }

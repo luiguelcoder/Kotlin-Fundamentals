@@ -1,5 +1,4 @@
 package nearshorecode.com.eventsapp.network
-
 import java.lang.Exception
 
 interface Callback<T> {

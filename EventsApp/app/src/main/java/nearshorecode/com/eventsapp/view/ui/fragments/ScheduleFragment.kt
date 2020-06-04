@@ -1,7 +1,6 @@
 package nearshorecode.com.eventsapp.view.ui.fragments
 
 import android.os.Bundle
-import android.telecom.Conference
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -14,6 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.fragment_schedule.*
 import kotlinx.android.synthetic.main.fragment_speakers.*
 import nearshorecode.com.eventsapp.R
+import nearshorecode.com.eventsapp.model.Conference
 import nearshorecode.com.eventsapp.view.adapter.ScheduleAdapter
 import nearshorecode.com.eventsapp.view.adapter.ScheduleListener
 import nearshorecode.com.eventsapp.viewmodel.ScheduleViewModel
@@ -53,7 +53,7 @@ class ScheduleFragment : Fragment(), ScheduleListener {
         viewModel.isLoading.observe(
             viewLifecycleOwner, Observer<Boolean> {
                 if (it != null) {
-                    rlSpeakersBase.visibility = View.INVISIBLE
+                    rlScheduleBase.visibility = View.INVISIBLE
                 }
             }
         )

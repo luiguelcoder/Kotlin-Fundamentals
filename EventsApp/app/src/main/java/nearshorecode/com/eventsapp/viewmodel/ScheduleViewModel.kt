@@ -1,8 +1,8 @@
 package nearshorecode.com.eventsapp.viewmodel
 
-import android.telecom.Conference
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import nearshorecode.com.eventsapp.model.Conference
 import nearshorecode.com.eventsapp.network.Callback
 import nearshorecode.com.eventsapp.network.FirestoreService
 import java.lang.Exception

@@ -1,12 +1,14 @@
 package nearshorecode.com.eventsapp.viewmodel
 
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+import nearshorecode.com.eventsapp.model.Conference
 import nearshorecode.com.eventsapp.model.Speaker
 import nearshorecode.com.eventsapp.network.Callback
 import nearshorecode.com.eventsapp.network.FirestoreService
 import java.lang.Exception
 
-class SpeakerViewModel {
+class SpeakerViewModel : ViewModel() {
     val firestoreService = FirestoreService()
     var listSpeakers: MutableLiveData<List<Speaker>> = MutableLiveData()
     var isLoading = MutableLiveData<Boolean>()
@@ -16,7 +18,8 @@ class SpeakerViewModel {
     }
 
     fun getSpeakersFromFirebase() {
-        firestoreService.getSchedule(object : Callback<List<Speaker>> {
+        firestoreService.getSpeakers(object : Callback<List<Speaker>> {
+
             override fun onSuccess(result: List<Speaker>?) {
                 listSpeakers.postValue(result)
                 processFinished()
