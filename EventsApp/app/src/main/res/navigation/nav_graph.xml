@@ -42,7 +42,7 @@
         android:id="@+id/navMapFragment"
         android:name="nearshorecode.com.eventsapp.view.ui.fragments.LocationFragment"
         android:label="fragment_location"
-        tools:layout="@layout/fragment_location" >
+        tools:layout="@layout/fragment_maps" >
         <action
             android:id="@+id/action_navMapFragment_to_locationDetailFragmentDialog"
             app:destination="@id/locationDetailFragmentDialog" />

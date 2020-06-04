@@ -5,10 +5,10 @@
     android:layout_height="match_parent"
     tools:context=".view.ui.fragments.LocationFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="nearshorecode.com.eventsapp.MapsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </FrameLayout>

@@ -5,20 +5,24 @@
     <item
         android:id="@+id/navHomeFragment"
         android:title="Inicio"
-        android:icon="@drawable/ic_home"/>
+        android:icon="@drawable/ic_home"
+        android:iconTint="#ffffff"/>
 
     <item
         android:id="@+id/navScheduleFragment"
         android:title="Cronograma"
-        android:icon="@drawable/ic_schedule"/>
+        android:icon="@drawable/ic_schedule"
+        android:iconTint="#ffffff"/>
 
     <item
         android:id="@+id/navSpeakersFragment"
         android:title="Expositores"
-        android:icon="@drawable/ic_speakers"/>
+        android:icon="@drawable/ic_speakers"
+        android:iconTint="#ffffff"/>
 
     <item
         android:id="@+id/navMapFragment"
         android:title="Mapa"
-        android:icon="@drawable/ic_baseline_map_24"/>
+        android:icon="@drawable/ic_baseline_map_24"
+        android:iconTint="#ffffff"/>
 </menu>
