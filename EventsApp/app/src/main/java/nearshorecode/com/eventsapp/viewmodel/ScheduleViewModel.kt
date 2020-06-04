@@ -2,11 +2,12 @@ package nearshorecode.com.eventsapp.viewmodel
 
 import android.telecom.Conference
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
 import nearshorecode.com.eventsapp.network.Callback
 import nearshorecode.com.eventsapp.network.FirestoreService
 import java.lang.Exception
 
-class ScheduleViewModel {
+class ScheduleViewModel: ViewModel() {
     val firestoreService = FirestoreService()
     var listSchedule: MutableLiveData<List<Conference>> = MutableLiveData()
     var isLoading = MutableLiveData<Boolean>()

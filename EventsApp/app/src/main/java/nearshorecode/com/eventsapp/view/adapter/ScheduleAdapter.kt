@@ -39,7 +39,7 @@ class ScheduleAdapter(val scheduleListener: ScheduleListener) : RecyclerView.Ada
             simpleDateFormatAmPm.format(conference.dateTime).toUpperCase()
     }
 
-    fun updateData(data: List<Conference>){
+    fun updateData(data: List<android.telecom.Conference>){
         listConference.clear()
         listConference.addAll(data)
         notifyDataSetChanged()
